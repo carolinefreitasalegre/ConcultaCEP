@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>Consulte seu cep!</title>
+</head>
+<body>
+    <main>
+        <header><h2>Hello Cep</h2></header>
+
+        <section id="section-one">
+            <h1>HOLA, DIGITE O CEP DESEJADO</h1>
+            <input type="text"  onfocus="this.value='';"  required name="busca" id="input" minlength="8" maxlength="8" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+            <button id="btn" onclick="pesquisar()">PESQUISAR</button>
+        </section>
+        <section id="section-two">
+            
+            <span id="textarea"></span>            
+
+            <h5></h5>
+        </section>
+        <footer>
+            <p>Todos os direitos reservados.</p>
+        </footer>
+    </main>
+</body>
+</html>
